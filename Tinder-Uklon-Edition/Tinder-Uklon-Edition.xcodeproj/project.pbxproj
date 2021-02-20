@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5261144325E13C5B005FB9E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5261144225E13C5B005FB9E8 /* AppDelegate.swift */; };
+		5261144525E13C5B005FB9E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5261144425E13C5B005FB9E8 /* SceneDelegate.swift */; };
+		5261144725E13C5B005FB9E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5261144625E13C5B005FB9E8 /* ViewController.swift */; };
+		5261144A25E13C5B005FB9E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5261144825E13C5B005FB9E8 /* Main.storyboard */; };
+		5261144C25E13C5D005FB9E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5261144B25E13C5D005FB9E8 /* Assets.xcassets */; };
+		5261144F25E13C5D005FB9E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5261144D25E13C5D005FB9E8 /* LaunchScreen.storyboard */; };
+		5261145925E13CA7005FB9E8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5261145825E13CA7005FB9E8 /* MapViewController.swift */; };
+		5261145C25E13CAD005FB9E8 /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5261145B25E13CAD005FB9E8 /* MapViewController.storyboard */; };
+		5261145F25E13CB8005FB9E8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5261145E25E13CB8005FB9E8 /* Constants.swift */; };
+		5261146225E13CD2005FB9E8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5261146125E13CD2005FB9E8 /* Podfile */; };
+		DECCEA1040BB532AE1941EA4 /* libPods-Tinder-Uklon-Edition.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F495B869ECFE89B998A69A /* libPods-Tinder-Uklon-Edition.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		47D27F6D3CCA481BAD96813B /* Pods-Tinder-Uklon-Edition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tinder-Uklon-Edition.release.xcconfig"; path = "Target Support Files/Pods-Tinder-Uklon-Edition/Pods-Tinder-Uklon-Edition.release.xcconfig"; sourceTree = "<group>"; };
+		49F495B869ECFE89B998A69A /* libPods-Tinder-Uklon-Edition.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tinder-Uklon-Edition.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5261143F25E13C5B005FB9E8 /* Tinder-Uklon-Edition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tinder-Uklon-Edition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5261144225E13C5B005FB9E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5261144425E13C5B005FB9E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5261144625E13C5B005FB9E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5261144925E13C5B005FB9E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5261144B25E13C5D005FB9E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5261144E25E13C5D005FB9E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5261145025E13C5D005FB9E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5261145825E13CA7005FB9E8 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		5261145B25E13CAD005FB9E8 /* MapViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapViewController.storyboard; sourceTree = "<group>"; };
+		5261145E25E13CB8005FB9E8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5261146125E13CD2005FB9E8 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		53FA05F64664EB5BFEFF57CC /* Pods-Tinder-Uklon-Edition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tinder-Uklon-Edition.debug.xcconfig"; path = "Target Support Files/Pods-Tinder-Uklon-Edition/Pods-Tinder-Uklon-Edition.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5261143C25E13C5B005FB9E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DECCEA1040BB532AE1941EA4 /* libPods-Tinder-Uklon-Edition.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03BF956B7AE7507479340AF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49F495B869ECFE89B998A69A /* libPods-Tinder-Uklon-Edition.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		497B87E7BBADBE3ED75971B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53FA05F64664EB5BFEFF57CC /* Pods-Tinder-Uklon-Edition.debug.xcconfig */,
+				47D27F6D3CCA481BAD96813B /* Pods-Tinder-Uklon-Edition.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5261143625E13C5B005FB9E8 = {
+			isa = PBXGroup;
+			children = (
+				5261146125E13CD2005FB9E8 /* Podfile */,
+				5261144125E13C5B005FB9E8 /* Tinder-Uklon-Edition */,
+				5261144025E13C5B005FB9E8 /* Products */,
+				497B87E7BBADBE3ED75971B6 /* Pods */,
+				03BF956B7AE7507479340AF2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5261144025E13C5B005FB9E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5261143F25E13C5B005FB9E8 /* Tinder-Uklon-Edition.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5261144125E13C5B005FB9E8 /* Tinder-Uklon-Edition */ = {
+			isa = PBXGroup;
+			children = (
+				5261144225E13C5B005FB9E8 /* AppDelegate.swift */,
+				5261144425E13C5B005FB9E8 /* SceneDelegate.swift */,
+				5261145E25E13CB8005FB9E8 /* Constants.swift */,
+				5261145B25E13CAD005FB9E8 /* MapViewController.storyboard */,
+				5261145825E13CA7005FB9E8 /* MapViewController.swift */,
+				5261144625E13C5B005FB9E8 /* ViewController.swift */,
+				5261144825E13C5B005FB9E8 /* Main.storyboard */,
+				5261144B25E13C5D005FB9E8 /* Assets.xcassets */,
+				5261144D25E13C5D005FB9E8 /* LaunchScreen.storyboard */,
+				5261145025E13C5D005FB9E8 /* Info.plist */,
+			);
+			path = "Tinder-Uklon-Edition";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5261143E25E13C5B005FB9E8 /* Tinder-Uklon-Edition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5261145325E13C5D005FB9E8 /* Build configuration list for PBXNativeTarget "Tinder-Uklon-Edition" */;
+			buildPhases = (
+				BD94996CED3734CABBA81481 /* [CP] Check Pods Manifest.lock */,
+				5261143B25E13C5B005FB9E8 /* Sources */,
+				5261143C25E13C5B005FB9E8 /* Frameworks */,
+				5261143D25E13C5B005FB9E8 /* Resources */,
+				02E3B9E4E20303D28F43FE3A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tinder-Uklon-Edition";
+			productName = "Tinder-Uklon-Edition";
+			productReference = 5261143F25E13C5B005FB9E8 /* Tinder-Uklon-Edition.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5261143725E13C5B005FB9E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					5261143E25E13C5B005FB9E8 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 5261143A25E13C5B005FB9E8 /* Build configuration list for PBXProject "Tinder-Uklon-Edition" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5261143625E13C5B005FB9E8;
+			productRefGroup = 5261144025E13C5B005FB9E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5261143E25E13C5B005FB9E8 /* Tinder-Uklon-Edition */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5261143D25E13C5B005FB9E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5261146225E13CD2005FB9E8 /* Podfile in Resources */,
+				5261145C25E13CAD005FB9E8 /* MapViewController.storyboard in Resources */,
+				5261144F25E13C5D005FB9E8 /* LaunchScreen.storyboard in Resources */,
+				5261144C25E13C5D005FB9E8 /* Assets.xcassets in Resources */,
+				5261144A25E13C5B005FB9E8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02E3B9E4E20303D28F43FE3A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tinder-Uklon-Edition/Pods-Tinder-Uklon-Edition-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tinder-Uklon-Edition/Pods-Tinder-Uklon-Edition-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tinder-Uklon-Edition/Pods-Tinder-Uklon-Edition-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD94996CED3734CABBA81481 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tinder-Uklon-Edition-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5261143B25E13C5B005FB9E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5261145F25E13CB8005FB9E8 /* Constants.swift in Sources */,
+				5261144725E13C5B005FB9E8 /* ViewController.swift in Sources */,
+				5261144325E13C5B005FB9E8 /* AppDelegate.swift in Sources */,
+				5261144525E13C5B005FB9E8 /* SceneDelegate.swift in Sources */,
+				5261145925E13CA7005FB9E8 /* MapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5261144825E13C5B005FB9E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5261144925E13C5B005FB9E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5261144D25E13C5D005FB9E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5261144E25E13C5D005FB9E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5261145125E13C5D005FB9E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5261145225E13C5D005FB9E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5261145425E13C5D005FB9E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53FA05F64664EB5BFEFF57CC /* Pods-Tinder-Uklon-Edition.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56WDYPRHS7;
+				INFOPLIST_FILE = "Tinder-Uklon-Edition/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "developer-at-bioware.Tinder-Uklon-Edition";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5261145525E13C5D005FB9E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47D27F6D3CCA481BAD96813B /* Pods-Tinder-Uklon-Edition.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56WDYPRHS7;
+				INFOPLIST_FILE = "Tinder-Uklon-Edition/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "developer-at-bioware.Tinder-Uklon-Edition";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5261143A25E13C5B005FB9E8 /* Build configuration list for PBXProject "Tinder-Uklon-Edition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5261145125E13C5D005FB9E8 /* Debug */,
+				5261145225E13C5D005FB9E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5261145325E13C5D005FB9E8 /* Build configuration list for PBXNativeTarget "Tinder-Uklon-Edition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5261145425E13C5D005FB9E8 /* Debug */,
+				5261145525E13C5D005FB9E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5261143725E13C5B005FB9E8 /* Project object */;
+}
