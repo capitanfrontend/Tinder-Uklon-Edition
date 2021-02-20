@@ -109,6 +109,21 @@
             </objects>
             <point key="canvasLocation" x="-330.43478260869568" y="140.625"/>
         </scene>
+        <!--ScrollViewController-->
+        <scene sceneID="Zq8-ri-2fK">
+            <objects>
+                <viewController storyboardIdentifier="ScrollViewController" title="ScrollViewController" id="3Xa-s6-3Ft" customClass="ScrollViewController" customModule="Tinder_Uklon_Edition" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c43-Zp-Fa6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="PFM-pd-cGq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x0A-bx-1sr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="469.56521739130437" y="140.625"/>
+        </scene>
         <!--Unsupported View Controller-->
         <scene sceneID="jti-iC-xY6">
             <objects>

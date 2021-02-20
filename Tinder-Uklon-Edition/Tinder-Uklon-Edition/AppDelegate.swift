@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    //MARK: authorization
+    //MARK: Siri authorization
     fileprivate func requestAuthorisation() {
         INPreferences.requestSiriAuthorization { status in
             if status == .authorized {
