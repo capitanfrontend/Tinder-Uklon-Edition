@@ -62,5 +62,20 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSSiriUsageDescription</key>
+	<string>Uklon wants to book rides using Siri</string>
+	<key>NSExtension</key>
+	<dict>
+		<key>NSExtensionPrincipalClass</key>
+		<string>$(PRODUCT_MODULE_NAME).IntentHandler</string>
+		<key>NSExtensionPointIdentifier</key>
+		<string>com.apple.intents-service</string>
+		<key>NSExtensionAttributes</key>
+		<dict/>
+		<key>Intents Supported</key>
+		<array>
+			<string>INRequestRideIntent</string>
+		</array>
+	</dict>
 </dict>
 </plist>
