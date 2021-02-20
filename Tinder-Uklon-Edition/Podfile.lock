@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.4.1)
+  - ARCoreLocation (0.1.10)
   - CocoaLumberjack/Core (3.7.0)
   - CocoaLumberjack/Swift (3.7.0):
     - CocoaLumberjack/Core
@@ -14,6 +15,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - ARCoreLocation (~> 0.1.10)
   - CocoaLumberjack/Swift
   - GoogleMaps
   - GooglePlaces
@@ -22,6 +24,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - ARCoreLocation
     - CocoaLumberjack
     - GoogleMaps
     - GooglePlaces
@@ -29,11 +32,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  ARCoreLocation: 882098e235b46438d5de66249dd67d4b5a9fd06b
   CocoaLumberjack: e8955b9d337ac307103b0a34fd141c32f27e53c5
   GoogleMaps: 008e2c80e38605b56b560e8deb73d4194ff30bef
   GooglePlaces: a058b776259c13e1323c9ff135549cb1b13ad8e7
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 4e47791d77107abfb4a31cf168af910599a2714e
+PODFILE CHECKSUM: 42dcb8450a3f73cf6ef364335af3758a2ba08a4a
 
 COCOAPODS: 1.9.3

@@ -11,6 +11,8 @@ import CoreLocation
 import GooglePlaces
 import Alamofire
 import SwiftyJSON
+import ARCoreLocation
+import ARKit
 
 class MapViewController: UIViewController {
     
@@ -131,6 +133,24 @@ class MapViewController: UIViewController {
     
     
     @IBAction func onArButtonPressed(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "ListLandmarksViewController", bundle: nil)
+        if let viewController = storyboard.instantiateViewController(withIdentifier: "ListLandmarksViewController") as? ListLandmarksViewController {
+            let interactor = ListLandmarksInteractor()
+            let presenter = ListLandmarksPresenter()
+            let router = ListLandmarksRouter()
+            viewController.interactor = interactor
+            viewController.router = router
+            interactor.presenter = presenter
+            presenter.displayer = viewController
+            router.viewController = viewController
+            router.dataStore = interactor
+            viewController.landmarker = ARLandmarker(view: ARSKView(),
+                                                     scene: InteractiveScene(),
+                                                     locationManager: CLLocationManager())
+           present(viewController, animated: true)
+                  }
+        
+        
     }
     
 }

@@ -10,4 +10,5 @@ target 'Tinder-Uklon-Edition' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'CocoaLumberjack/Swift'
+  pod 'ARCoreLocation', '~> 0.1.10'
 end

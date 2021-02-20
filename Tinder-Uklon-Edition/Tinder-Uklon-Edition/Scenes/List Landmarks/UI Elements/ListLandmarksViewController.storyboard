@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List Landmarks View Controller-->
+        <scene sceneID="ZPA-2n-6st">
+            <objects>
+                <viewController storyboardIdentifier="ListLandmarksViewController" modalPresentationStyle="fullScreen" id="0vC-sC-bT4" customClass="ListLandmarksViewController" customModule="Tinder_Uklon_Edition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RtL-2S-txl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdI-GL-9gz">
+                                <rect key="frame" x="15" y="25" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Az0-ms-Lk9"/>
+                                    <constraint firstAttribute="width" constant="50" id="ael-dh-d52"/>
+                                </constraints>
+                                <state key="normal" image="back_arrow"/>
+                                <connections>
+                                    <action selector="backAction:" destination="0vC-sC-bT4" eventType="touchUpInside" id="e4B-lU-k8c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yca-Hl-NNR"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KdI-GL-9gz" firstAttribute="top" secondItem="yca-Hl-NNR" secondAttribute="top" constant="25" id="gFM-gm-goS"/>
+                            <constraint firstItem="KdI-GL-9gz" firstAttribute="leading" secondItem="yca-Hl-NNR" secondAttribute="leading" constant="15" id="tug-5v-kt5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5cp-IR-RLK"/>
+                    <connections>
+                        <outlet property="backBtt" destination="KdI-GL-9gz" id="pYg-HJ-6xw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQ7-fY-p6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="469.60000000000002" y="125.4872563718141"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back_arrow" width="512" height="512"/>
+    </resources>
+</document>

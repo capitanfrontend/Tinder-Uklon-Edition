@@ -16,6 +16,17 @@
 		5261145C25E13CAD005FB9E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5261145B25E13CAD005FB9E8 /* Main.storyboard */; };
 		5261145F25E13CB8005FB9E8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5261145E25E13CB8005FB9E8 /* Constants.swift */; };
 		5261146225E13CD2005FB9E8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5261146125E13CD2005FB9E8 /* Podfile */; };
+		52B72B6325E18D3C006B6D85 /* ListLandmarksInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B72B5925E18D3C006B6D85 /* ListLandmarksInteractor.swift */; };
+		52B72B6425E18D3C006B6D85 /* ListLandmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B72B5A25E18D3C006B6D85 /* ListLandmarksViewController.swift */; };
+		52B72B6525E18D3C006B6D85 /* ListLandmarksConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B72B5B25E18D3C006B6D85 /* ListLandmarksConfiguration.swift */; };
+		52B72B6625E18D3C006B6D85 /* ListLandmarksPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B72B5C25E18D3C006B6D85 /* ListLandmarksPresenter.swift */; };
+		52B72B6725E18D3C006B6D85 /* ListLandmarksModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B72B5D25E18D3C006B6D85 /* ListLandmarksModels.swift */; };
+		52B72B6825E18D3C006B6D85 /* ListLandmarksRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B72B5E25E18D3C006B6D85 /* ListLandmarksRouter.swift */; };
+		52B72B6C25E18D49006B6D85 /* Mountain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B72B6B25E18D49006B6D85 /* Mountain.swift */; };
+		52B72B7025E18D5E006B6D85 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B72B6F25E18D5D006B6D85 /* StoryboardInstantiable.swift */; };
+		52B72B8025E18E23006B6D85 /* ListLandmarksViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52B72B7C25E18E23006B6D85 /* ListLandmarksViewController.storyboard */; };
+		52B72B8325E18E23006B6D85 /* ListLandmarksItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52B72B7F25E18E23006B6D85 /* ListLandmarksItem.xib */; };
+		52B72B9025E19C46006B6D85 /* ListLandmarksItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B72B8F25E19C46006B6D85 /* ListLandmarksItem.swift */; };
 		BC45CC0625E142CD000D2920 /* RideRequestExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = BC45CC0525E142CD000D2920 /* RideRequestExtension.intentdefinition */; };
 		BC45CC1025E148F7000D2920 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC45CC0F25E148F7000D2920 /* IntentHandler.swift */; };
 		BC45CC1425E14A06000D2920 /* RideRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC45CC1325E14A05000D2920 /* RideRequestHandler.swift */; };
@@ -36,6 +47,17 @@
 		5261145B25E13CAD005FB9E8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5261145E25E13CB8005FB9E8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5261146125E13CD2005FB9E8 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		52B72B5925E18D3C006B6D85 /* ListLandmarksInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListLandmarksInteractor.swift; sourceTree = "<group>"; };
+		52B72B5A25E18D3C006B6D85 /* ListLandmarksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListLandmarksViewController.swift; sourceTree = "<group>"; };
+		52B72B5B25E18D3C006B6D85 /* ListLandmarksConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListLandmarksConfiguration.swift; sourceTree = "<group>"; };
+		52B72B5C25E18D3C006B6D85 /* ListLandmarksPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListLandmarksPresenter.swift; sourceTree = "<group>"; };
+		52B72B5D25E18D3C006B6D85 /* ListLandmarksModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListLandmarksModels.swift; sourceTree = "<group>"; };
+		52B72B5E25E18D3C006B6D85 /* ListLandmarksRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListLandmarksRouter.swift; sourceTree = "<group>"; };
+		52B72B6B25E18D49006B6D85 /* Mountain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mountain.swift; sourceTree = "<group>"; };
+		52B72B6F25E18D5D006B6D85 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		52B72B7C25E18E23006B6D85 /* ListLandmarksViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ListLandmarksViewController.storyboard; sourceTree = "<group>"; };
+		52B72B7F25E18E23006B6D85 /* ListLandmarksItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListLandmarksItem.xib; sourceTree = "<group>"; };
+		52B72B8F25E19C46006B6D85 /* ListLandmarksItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListLandmarksItem.swift; sourceTree = "<group>"; };
 		53FA05F64664EB5BFEFF57CC /* Pods-Tinder-Uklon-Edition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tinder-Uklon-Edition.debug.xcconfig"; path = "Target Support Files/Pods-Tinder-Uklon-Edition/Pods-Tinder-Uklon-Edition.debug.xcconfig"; sourceTree = "<group>"; };
 		BC45CC0525E142CD000D2920 /* RideRequestExtension.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = RideRequestExtension.intentdefinition; sourceTree = "<group>"; };
 		BC45CC0F25E148F7000D2920 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
@@ -103,11 +125,62 @@
 				5261145825E13CA7005FB9E8 /* MapViewController.swift */,
 				5261144625E13C5B005FB9E8 /* ViewController.swift */,
 				5261144B25E13C5D005FB9E8 /* Assets.xcassets */,
+				52B72B6E25E18D5D006B6D85 /* API Simplification */,
+				52B72B6A25E18D49006B6D85 /* Entities */,
+				52B72B5225E18D3C006B6D85 /* Scenes */,
 				5261144D25E13C5D005FB9E8 /* LaunchScreen.storyboard */,
 				5261145025E13C5D005FB9E8 /* Info.plist */,
 				BC45CC0525E142CD000D2920 /* RideRequestExtension.intentdefinition */,
 			);
 			path = "Tinder-Uklon-Edition";
+			sourceTree = "<group>";
+		};
+		52B72B5225E18D3C006B6D85 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				52B72B5325E18D3C006B6D85 /* List Landmarks */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		52B72B5325E18D3C006B6D85 /* List Landmarks */ = {
+			isa = PBXGroup;
+			children = (
+				52B72B7B25E18E23006B6D85 /* UI Elements */,
+				52B72B5925E18D3C006B6D85 /* ListLandmarksInteractor.swift */,
+				52B72B5A25E18D3C006B6D85 /* ListLandmarksViewController.swift */,
+				52B72B5B25E18D3C006B6D85 /* ListLandmarksConfiguration.swift */,
+				52B72B5C25E18D3C006B6D85 /* ListLandmarksPresenter.swift */,
+				52B72B5D25E18D3C006B6D85 /* ListLandmarksModels.swift */,
+				52B72B5E25E18D3C006B6D85 /* ListLandmarksRouter.swift */,
+			);
+			path = "List Landmarks";
+			sourceTree = "<group>";
+		};
+		52B72B6A25E18D49006B6D85 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				52B72B6B25E18D49006B6D85 /* Mountain.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		52B72B6E25E18D5D006B6D85 /* API Simplification */ = {
+			isa = PBXGroup;
+			children = (
+				52B72B6F25E18D5D006B6D85 /* StoryboardInstantiable.swift */,
+			);
+			path = "API Simplification";
+			sourceTree = "<group>";
+		};
+		52B72B7B25E18E23006B6D85 /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				52B72B7C25E18E23006B6D85 /* ListLandmarksViewController.storyboard */,
+				52B72B8F25E19C46006B6D85 /* ListLandmarksItem.swift */,
+				52B72B7F25E18E23006B6D85 /* ListLandmarksItem.xib */,
+			);
+			path = "UI Elements";
 			sourceTree = "<group>";
 		};
 		BC45CC0E25E147DE000D2920 /* RideRequestExtension */ = {
@@ -178,7 +251,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52B72B8025E18E23006B6D85 /* ListLandmarksViewController.storyboard in Resources */,
 				5261146225E13CD2005FB9E8 /* Podfile in Resources */,
+				52B72B8325E18E23006B6D85 /* ListLandmarksItem.xib in Resources */,
 				5261145C25E13CAD005FB9E8 /* Main.storyboard in Resources */,
 				5261144F25E13C5D005FB9E8 /* LaunchScreen.storyboard in Resources */,
 				5261144C25E13C5D005FB9E8 /* Assets.xcassets in Resources */,
@@ -234,14 +309,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52B72B6625E18D3C006B6D85 /* ListLandmarksPresenter.swift in Sources */,
+				52B72B6425E18D3C006B6D85 /* ListLandmarksViewController.swift in Sources */,
+				52B72B9025E19C46006B6D85 /* ListLandmarksItem.swift in Sources */,
 				5261145F25E13CB8005FB9E8 /* Constants.swift in Sources */,
+				52B72B6725E18D3C006B6D85 /* ListLandmarksModels.swift in Sources */,
+				52B72B7025E18D5E006B6D85 /* StoryboardInstantiable.swift in Sources */,
 				5261144725E13C5B005FB9E8 /* ViewController.swift in Sources */,
 				5261144325E13C5B005FB9E8 /* AppDelegate.swift in Sources */,
+				52B72B6325E18D3C006B6D85 /* ListLandmarksInteractor.swift in Sources */,
 				5261144525E13C5B005FB9E8 /* SceneDelegate.swift in Sources */,
 				BC45CC1025E148F7000D2920 /* IntentHandler.swift in Sources */,
 				BC45CC0625E142CD000D2920 /* RideRequestExtension.intentdefinition in Sources */,
 				BC45CC1425E14A06000D2920 /* RideRequestHandler.swift in Sources */,
+				52B72B6525E18D3C006B6D85 /* ListLandmarksConfiguration.swift in Sources */,
+				52B72B6825E18D3C006B6D85 /* ListLandmarksRouter.swift in Sources */,
 				5261145925E13CA7005FB9E8 /* MapViewController.swift in Sources */,
+				52B72B6C25E18D49006B6D85 /* Mountain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

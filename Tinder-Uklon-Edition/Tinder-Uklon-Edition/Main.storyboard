@@ -109,6 +109,27 @@
             </objects>
             <point key="canvasLocation" x="-330.43478260869568" y="140.625"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="NAv-Ev-0BO">
+            <objects>
+                <viewController id="rrT-NM-qUc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NUb-4Z-VZd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yv7-Y2-sE0">
+                                <rect key="frame" x="-15" y="0.0" width="446" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bOs-yx-dLV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A6H-I9-d4U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="449.27536231884062" y="140.625"/>
+        </scene>
         <!--Unsupported View Controller-->
         <scene sceneID="jti-iC-xY6">
             <objects>
