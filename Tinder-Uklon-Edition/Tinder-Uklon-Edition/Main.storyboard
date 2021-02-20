@@ -168,17 +168,126 @@
             </objects>
             <point key="canvasLocation" x="1319" y="141"/>
         </scene>
+        <!--Pop View Controller-->
+        <scene sceneID="U5v-Rv-m2d">
+            <objects>
+                <viewController storyboardIdentifier="PopViewController" id="tw1-dz-5VQ" customClass="PopViewController" customModule="Tinder_Uklon_Edition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N0h-KY-0iU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcP-bq-jhA">
+                                <rect key="frame" x="57" y="174" width="300" height="558"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="uklon-taxi-in-kyiv" translatesAutoresizingMaskIntoConstraints="NO" id="JlD-tU-IDt">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="319"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Choose way of find a taxi driver" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69j-sf-rcO">
+                                        <rect key="frame" x="0.0" y="334" width="300" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoP-fk-rJE">
+                                        <rect key="frame" x="15" y="390" width="120" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="UVL-52-KRf"/>
+                                            <constraint firstAttribute="height" constant="60" id="gyz-Y7-bGx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <state key="normal" title="Standard">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="standatrAction:" destination="tw1-dz-5VQ" eventType="touchUpInside" id="zp2-Lz-FZo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1SU-Ny-OZF">
+                                        <rect key="frame" x="165" y="390" width="120" height="60"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="UNT-6d-t62"/>
+                                            <constraint firstAttribute="height" constant="60" id="Zjv-zu-j8U"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <state key="normal" title="Tinder">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tinderAction:" destination="tw1-dz-5VQ" eventType="touchUpInside" id="VP5-Fu-jaf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKC-PH-nc2">
+                                        <rect key="frame" x="0.0" y="500" width="300" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="YI8-b8-L2f"/>
+                                        </constraints>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelAction:" destination="tw1-dz-5VQ" eventType="touchUpInside" id="myj-go-H0Y"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="69j-sf-rcO" secondAttribute="trailing" id="0N7-FN-Mb9"/>
+                                    <constraint firstItem="69j-sf-rcO" firstAttribute="bottom" secondItem="VoP-fk-rJE" secondAttribute="top" constant="-35" id="HSs-RR-wwP"/>
+                                    <constraint firstItem="1SU-Ny-OZF" firstAttribute="bottom" secondItem="RKC-PH-nc2" secondAttribute="top" constant="-50" id="L3v-JA-ybG"/>
+                                    <constraint firstAttribute="height" constant="558" id="LQk-hL-njH"/>
+                                    <constraint firstItem="69j-sf-rcO" firstAttribute="leading" secondItem="tcP-bq-jhA" secondAttribute="leading" id="MFm-zn-vrp"/>
+                                    <constraint firstItem="VoP-fk-rJE" firstAttribute="bottom" secondItem="RKC-PH-nc2" secondAttribute="top" constant="-50" id="Pgi-0P-yAs"/>
+                                    <constraint firstItem="RKC-PH-nc2" firstAttribute="leading" secondItem="tcP-bq-jhA" secondAttribute="leading" id="R9m-oO-NRO"/>
+                                    <constraint firstItem="69j-sf-rcO" firstAttribute="top" secondItem="JlD-tU-IDt" secondAttribute="bottom" constant="15" id="Wfm-6i-ILm"/>
+                                    <constraint firstItem="JlD-tU-IDt" firstAttribute="top" secondItem="tcP-bq-jhA" secondAttribute="top" id="aa6-Bn-k8K"/>
+                                    <constraint firstAttribute="trailing" secondItem="RKC-PH-nc2" secondAttribute="trailing" id="aqa-y8-4hh"/>
+                                    <constraint firstAttribute="bottom" secondItem="RKC-PH-nc2" secondAttribute="bottom" constant="28" id="b1w-At-YFq"/>
+                                    <constraint firstAttribute="trailing" secondItem="JlD-tU-IDt" secondAttribute="trailing" id="ckb-30-NlZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="1SU-Ny-OZF" secondAttribute="trailing" constant="15" id="icm-2p-wjh"/>
+                                    <constraint firstAttribute="width" constant="300" id="iqK-iG-704"/>
+                                    <constraint firstItem="VoP-fk-rJE" firstAttribute="leading" secondItem="tcP-bq-jhA" secondAttribute="leading" constant="15" id="qJ3-gV-et9"/>
+                                    <constraint firstItem="JlD-tU-IDt" firstAttribute="leading" secondItem="tcP-bq-jhA" secondAttribute="leading" id="wa3-ZA-wpn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7zR-Pq-746"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tcP-bq-jhA" firstAttribute="centerY" secondItem="7zR-Pq-746" secondAttribute="centerY" id="5af-Wj-BOY"/>
+                            <constraint firstItem="tcP-bq-jhA" firstAttribute="centerX" secondItem="7zR-Pq-746" secondAttribute="centerX" id="oNw-1N-ZYu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3t1-1n-8Ye"/>
+                    <connections>
+                        <outlet property="cancelBtn" destination="RKC-PH-nc2" id="Dfq-0F-EJB"/>
+                        <outlet property="standartBtn" destination="VoP-fk-rJE" id="Fvw-aB-Nmp"/>
+                        <outlet property="tinderBtn" destination="1SU-Ny-OZF" id="PvY-9P-gak"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qy7-4r-Hfq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1110.144927536232" y="160.71428571428569"/>
+        </scene>
     </scenes>
     <resources>
         <image name="back_arrow" width="512" height="512"/>
+        <image name="uklon-taxi-in-kyiv" width="1024" height="768"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

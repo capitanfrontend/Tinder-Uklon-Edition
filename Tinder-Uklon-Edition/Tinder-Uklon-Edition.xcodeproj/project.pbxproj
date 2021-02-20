@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5250467825E1D2E0007B42B2 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5250467625E1D2E0007B42B2 /* Timer.swift */; };
+		5250467925E1D2E0007B42B2 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5250467725E1D2E0007B42B2 /* ProgressBar.swift */; };
 		5261144325E13C5B005FB9E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5261144225E13C5B005FB9E8 /* AppDelegate.swift */; };
 		5261144525E13C5B005FB9E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5261144425E13C5B005FB9E8 /* SceneDelegate.swift */; };
 		5261144725E13C5B005FB9E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5261144625E13C5B005FB9E8 /* ViewController.swift */; };
@@ -27,6 +29,7 @@
 		52B72B8025E18E23006B6D85 /* ListLandmarksViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52B72B7C25E18E23006B6D85 /* ListLandmarksViewController.storyboard */; };
 		52B72B8325E18E23006B6D85 /* ListLandmarksItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52B72B7F25E18E23006B6D85 /* ListLandmarksItem.xib */; };
 		52B72B9025E19C46006B6D85 /* ListLandmarksItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B72B8F25E19C46006B6D85 /* ListLandmarksItem.swift */; };
+		52B72B9E25E1B505006B6D85 /* PopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B72B9D25E1B505006B6D85 /* PopViewController.swift */; };
 		BC45CC0625E142CD000D2920 /* RideRequestExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = BC45CC0525E142CD000D2920 /* RideRequestExtension.intentdefinition */; };
 		BC45CC1025E148F7000D2920 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC45CC0F25E148F7000D2920 /* IntentHandler.swift */; };
 		BC45CC1425E14A06000D2920 /* RideRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC45CC1325E14A05000D2920 /* RideRequestHandler.swift */; };
@@ -36,6 +39,8 @@
 /* Begin PBXFileReference section */
 		47D27F6D3CCA481BAD96813B /* Pods-Tinder-Uklon-Edition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tinder-Uklon-Edition.release.xcconfig"; path = "Target Support Files/Pods-Tinder-Uklon-Edition/Pods-Tinder-Uklon-Edition.release.xcconfig"; sourceTree = "<group>"; };
 		49F495B869ECFE89B998A69A /* libPods-Tinder-Uklon-Edition.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tinder-Uklon-Edition.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5250467625E1D2E0007B42B2 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		5250467725E1D2E0007B42B2 /* ProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		5261143F25E13C5B005FB9E8 /* Tinder-Uklon-Edition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tinder-Uklon-Edition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5261144225E13C5B005FB9E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5261144425E13C5B005FB9E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +63,7 @@
 		52B72B7C25E18E23006B6D85 /* ListLandmarksViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ListLandmarksViewController.storyboard; sourceTree = "<group>"; };
 		52B72B7F25E18E23006B6D85 /* ListLandmarksItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListLandmarksItem.xib; sourceTree = "<group>"; };
 		52B72B8F25E19C46006B6D85 /* ListLandmarksItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListLandmarksItem.swift; sourceTree = "<group>"; };
+		52B72B9D25E1B505006B6D85 /* PopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopViewController.swift; sourceTree = "<group>"; };
 		53FA05F64664EB5BFEFF57CC /* Pods-Tinder-Uklon-Edition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tinder-Uklon-Edition.debug.xcconfig"; path = "Target Support Files/Pods-Tinder-Uklon-Edition/Pods-Tinder-Uklon-Edition.debug.xcconfig"; sourceTree = "<group>"; };
 		BC45CC0525E142CD000D2920 /* RideRequestExtension.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = RideRequestExtension.intentdefinition; sourceTree = "<group>"; };
 		BC45CC0F25E148F7000D2920 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
@@ -123,6 +129,8 @@
 				5261145E25E13CB8005FB9E8 /* Constants.swift */,
 				5261145B25E13CAD005FB9E8 /* Main.storyboard */,
 				5261145825E13CA7005FB9E8 /* MapViewController.swift */,
+				5250467725E1D2E0007B42B2 /* ProgressBar.swift */,
+				5250467625E1D2E0007B42B2 /* Timer.swift */,
 				5261144625E13C5B005FB9E8 /* ViewController.swift */,
 				5261144B25E13C5D005FB9E8 /* Assets.xcassets */,
 				52B72B6E25E18D5D006B6D85 /* API Simplification */,
@@ -131,6 +139,7 @@
 				5261144D25E13C5D005FB9E8 /* LaunchScreen.storyboard */,
 				5261145025E13C5D005FB9E8 /* Info.plist */,
 				BC45CC0525E142CD000D2920 /* RideRequestExtension.intentdefinition */,
+				52B72B9D25E1B505006B6D85 /* PopViewController.swift */,
 			);
 			path = "Tinder-Uklon-Edition";
 			sourceTree = "<group>";
@@ -311,11 +320,13 @@
 			files = (
 				52B72B6625E18D3C006B6D85 /* ListLandmarksPresenter.swift in Sources */,
 				52B72B6425E18D3C006B6D85 /* ListLandmarksViewController.swift in Sources */,
+				52B72B9E25E1B505006B6D85 /* PopViewController.swift in Sources */,
 				52B72B9025E19C46006B6D85 /* ListLandmarksItem.swift in Sources */,
 				5261145F25E13CB8005FB9E8 /* Constants.swift in Sources */,
 				52B72B6725E18D3C006B6D85 /* ListLandmarksModels.swift in Sources */,
 				52B72B7025E18D5E006B6D85 /* StoryboardInstantiable.swift in Sources */,
 				5261144725E13C5B005FB9E8 /* ViewController.swift in Sources */,
+				5250467825E1D2E0007B42B2 /* Timer.swift in Sources */,
 				5261144325E13C5B005FB9E8 /* AppDelegate.swift in Sources */,
 				52B72B6325E18D3C006B6D85 /* ListLandmarksInteractor.swift in Sources */,
 				5261144525E13C5B005FB9E8 /* SceneDelegate.swift in Sources */,
@@ -325,6 +336,7 @@
 				52B72B6525E18D3C006B6D85 /* ListLandmarksConfiguration.swift in Sources */,
 				52B72B6825E18D3C006B6D85 /* ListLandmarksRouter.swift in Sources */,
 				5261145925E13CA7005FB9E8 /* MapViewController.swift in Sources */,
+				5250467925E1D2E0007B42B2 /* ProgressBar.swift in Sources */,
 				52B72B6C25E18D49006B6D85 /* Mountain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

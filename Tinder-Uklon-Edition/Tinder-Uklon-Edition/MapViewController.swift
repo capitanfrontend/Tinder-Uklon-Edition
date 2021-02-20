@@ -97,6 +97,50 @@ class MapViewController: UIViewController {
         let camera = GMSCameraPosition(target: currentLocation, zoom: 10)
         self.mapView.animate(to: camera)
     }
+    
+    private func buildRoute1(latitude: String, longitude: String) {
+        let url = "https://maps.googleapis.com/maps/api/directions/json?origin=\(currentLocation.latitude),\(currentLocation.longitude)&destination=\(latitude),\(longitude)&mode=driving&key=\(Constants.googleMapsKey)"
+        print("in map destinationLocation= \(destinationLocation)")
+        AF.request(url).responseJSON { (reseponse) in
+                   guard let data = reseponse.data else {
+                       return
+                   }
+                   do {
+                       let jsonData = try JSON(data: data)
+                       let routes = jsonData["routes"].arrayValue
+                       
+                       for route in routes {
+                           let overview_polyline = route["overview_polyline"].dictionary
+                           let points = overview_polyline?["points"]?.string
+                           let path = GMSPath.init(fromEncodedPath: points ?? "")
+                           let polyline = GMSPolyline.init(path: path)
+                           polyline.strokeColor = .systemBlue
+                           polyline.strokeWidth = 5
+                           polyline.map = self.mapView
+                       }
+                   }
+                    catch let error {
+                       print(error.localizedDescription)
+                   }
+               }
+        
+        // MARK: Marker for source location
+        let sourceMarker = GMSMarker()
+        sourceMarker.position = CLLocationCoordinate2D(latitude: currentLocation.latitude, longitude: currentLocation.longitude)
+        sourceMarker.title = "Myself"
+        sourceMarker.map = self.mapView
+        
+        
+        // MARK: Marker for destination location
+        let destinationMarker = GMSMarker()
+        destinationMarker.position = CLLocationCoordinate2D(latitude: destinationLocation.latitude, longitude: destinationLocation.longitude)
+        destinationMarker.title = searchLabel.text!
+        destinationMarker.map = self.mapView
+        
+        
+        let camera = GMSCameraPosition(target: currentLocation, zoom: 20)
+        self.mapView.animate(to: camera)
+    }
 
     
     private func setupLocationManager() {
@@ -133,6 +177,13 @@ class MapViewController: UIViewController {
     
     
     @IBAction func onArButtonPressed(_ sender: Any) {
+       /* let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let viewController = storyboard.instantiateViewController(withIdentifier: "PopViewController") as? PopViewController {
+            viewController.findTaxi = { self.buildRoute1(latitude: "48.505038", longitude: "35.088721") }
+            present(viewController, animated: true)
+        }*/
+
+        //car 48.505038, 35.088721
         let storyboard = UIStoryboard(name: "ListLandmarksViewController", bundle: nil)
         if let viewController = storyboard.instantiateViewController(withIdentifier: "ListLandmarksViewController") as? ListLandmarksViewController {
             let interactor = ListLandmarksInteractor()
@@ -149,8 +200,6 @@ class MapViewController: UIViewController {
                                                      locationManager: CLLocationManager())
            present(viewController, animated: true)
                   }
-        
-        
     }
     
 }

@@ -39,14 +39,17 @@ struct VictoriaLandmark {
 }
 
 struct VictoriaData_Landmarks {//48.504916774648024, 35.08895341534381
+    //48.505038, 35.088721
+    //48.50501598291745, 35.08884350531226
+    //48.50501520439531, 35.08887130843918
     static let landmarks: [VictoriaLandmark] = [
         VictoriaLandmark(latitude: 48.504916774648024, longitude: 35.08895341534381, name: "Legislative Assembly of British Columbia", details: "The British Columbia Parliament Buildings are located in Victoria, British Columbia, Canada, and are home to the Legislative Assembly of British Columbia. The Speaker and the Serjeant-at-Arms are amongst those responsible for the legislative precinct, which by statute include the Parliament Buildings and grounds."),
-        VictoriaLandmark(latitude: 48.429364, longitude: -123.367335, name: "Victoria's Chinatown", details: "The Chinatown in Victoria, British Columbia is the oldest Chinatown in Canada and the second oldest in North America after San Francisco's. Victoria's Chinatown had its beginnings in the mid-nineteenth century in the mass influx of miners from California to what is now British Columbia in 1858."),
+        VictoriaLandmark(latitude: 48.505038, longitude: 35.088721, name: "Victoria's Chinatown", details: "The Chinatown in Victoria, British Columbia is the oldest Chinatown in Canada and the second oldest in North America after San Francisco's. Victoria's Chinatown had its beginnings in the mid-nineteenth century in the mass influx of miners from California to what is now British Columbia in 1858."),
         VictoriaLandmark(latitude: 48.429337, longitude: -123.367932, name: "Fan Tan Alley", details: "Fan Tan Alley is an alley in Victoria, British Columbia's Chinatown. It runs south from Fisgard Avenue to Pandora Avenue in the block between Government Street and Store Street. Named after the Chinese gambling game Fan-Tan, the alley was originally a gambling district with restaurants, shops, and opium dens."),
         VictoriaLandmark(latitude: 48.423296, longitude: -123.366670, name: "Victoria Bug Zoo", details: "The Victoria Bug Zoo is a two-room minizoo that is located in downtown Victoria, British Columbia, Canada, just one block north of the Fairmont Empress Hotel. The Victoria Bug Zoo is owned and operated by Victoria Bug Zoo Incorporated."),
-        VictoriaLandmark(latitude: 48.422369, longitude: -123.366920, name: "Miniature World", details: "Miniature-themed dioramas & displays representing historical times & fictional worlds."),
+        VictoriaLandmark(latitude: 48.50501598291745, longitude: 35.08884350531226, name: "Miniature World", details: "Miniature-themed dioramas & displays representing historical times & fictional worlds."),
         VictoriaLandmark(latitude: 48.419795, longitude: -123.367462, name: "Royal BC Museum", details: "This museum showcases natural wonders like dinosaurs & includes an IMAX movie theatre."),
-        VictoriaLandmark(latitude: 48.420520, longitude: -123.369290, name: "Cenotaph", details: nil),
+        VictoriaLandmark(latitude: 48.50501520439531, longitude: 35.08887130843918, name: "Cenotaph", details: nil),
         VictoriaLandmark(latitude: 48.420505, longitude: -123.369948, name: "Queen Victoria Statue", details: nil),
         
         
