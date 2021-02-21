@@ -114,6 +114,10 @@ class MapViewController: UIViewController {
                            let points = overview_polyline?["points"]?.string
                            let path = GMSPath.init(fromEncodedPath: points ?? "")
                            let polyline = GMSPolyline.init(path: path)
+                        for i in stride(from: 0, to: path!.count(), by: 2) {
+                            let cor = path?.coordinate(at: i)
+                            VictoriaData_Landmarks.landmarks.append(VictoriaLandmark(latitude: cor!.latitude, longitude: cor!.longitude, name: "You on right way!", details: "# \(i)"))
+                        }
                            polyline.strokeColor = .systemBlue
                            polyline.strokeWidth = 5
                            polyline.map = self.mapView
