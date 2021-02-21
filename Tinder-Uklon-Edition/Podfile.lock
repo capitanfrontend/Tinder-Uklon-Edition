@@ -12,6 +12,7 @@ PODS:
   - GooglePlaces (4.1.0):
     - GoogleMaps/Base (= 4.1.0)
   - SwiftyJSON (5.0.0)
+  - VerticalCardSwiper (2.3.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -20,6 +21,7 @@ DEPENDENCIES:
   - GoogleMaps
   - GooglePlaces
   - SwiftyJSON
+  - VerticalCardSwiper
 
 SPEC REPOS:
   trunk:
@@ -29,6 +31,7 @@ SPEC REPOS:
     - GoogleMaps
     - GooglePlaces
     - SwiftyJSON
+    - VerticalCardSwiper
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
@@ -37,7 +40,8 @@ SPEC CHECKSUMS:
   GoogleMaps: 008e2c80e38605b56b560e8deb73d4194ff30bef
   GooglePlaces: a058b776259c13e1323c9ff135549cb1b13ad8e7
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  VerticalCardSwiper: 68df635b354500f86934ea044ade37a264c044c6
 
-PODFILE CHECKSUM: 42dcb8450a3f73cf6ef364335af3758a2ba08a4a
+PODFILE CHECKSUM: e4e82a37672b42aefc0cd265c3931f61af4a2e4f
 
 COCOAPODS: 1.9.3

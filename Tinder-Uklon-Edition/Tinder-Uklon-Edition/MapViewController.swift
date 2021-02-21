@@ -177,14 +177,14 @@ class MapViewController: UIViewController {
     
     
     @IBAction func onArButtonPressed(_ sender: Any) {
-       /* let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let viewController = storyboard.instantiateViewController(withIdentifier: "PopViewController") as? PopViewController {
             viewController.findTaxi = { self.buildRoute1(latitude: "48.505038", longitude: "35.088721") }
             present(viewController, animated: true)
-        }*/
+        }
 
         //car 48.505038, 35.088721
-        let storyboard = UIStoryboard(name: "ListLandmarksViewController", bundle: nil)
+        /*let storyboard = UIStoryboard(name: "ListLandmarksViewController", bundle: nil)
         if let viewController = storyboard.instantiateViewController(withIdentifier: "ListLandmarksViewController") as? ListLandmarksViewController {
             let interactor = ListLandmarksInteractor()
             let presenter = ListLandmarksPresenter()
@@ -199,7 +199,7 @@ class MapViewController: UIViewController {
                                                      scene: InteractiveScene(),
                                                      locationManager: CLLocationManager())
            present(viewController, animated: true)
-                  }
+                  }*/
     }
     
 }

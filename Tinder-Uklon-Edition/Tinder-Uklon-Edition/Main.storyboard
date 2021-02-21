@@ -21,6 +21,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhR-ww-y8f">
+                                <rect key="frame" x="339" y="722" width="50" height="50"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="kJJ-CE-0eb"/>
+                                    <constraint firstAttribute="height" constant="50" id="saE-iD-uo6"/>
+                                </constraints>
+                                <state key="normal" title="AR">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="onArButtonPressed:" destination="kVG-Ye-afY" eventType="touchUpInside" id="OVt-5O-2Zp"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zti-JK-hhK">
                                 <rect key="frame" x="339" y="787" width="50" height="50"/>
                                 <color key="backgroundColor" name="AccentColor"/>
@@ -28,7 +42,7 @@
                                     <constraint firstAttribute="height" constant="50" id="Wlp-GP-KKS"/>
                                     <constraint firstAttribute="width" constant="50" id="vt0-e0-JeG"/>
                                 </constraints>
-                                <state key="normal" title="AR">
+                                <state key="normal" title="GO">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
                                 <connections>
@@ -90,8 +104,10 @@
                             <constraint firstItem="CXi-VK-Dhc" firstAttribute="leading" secondItem="eWz-Sh-HPK" secondAttribute="leading" id="HXl-PM-IVI"/>
                             <constraint firstItem="CXi-VK-Dhc" firstAttribute="top" secondItem="bup-7R-YyO" secondAttribute="top" id="JYC-ur-XCI"/>
                             <constraint firstItem="eWz-Sh-HPK" firstAttribute="trailing" secondItem="ugz-FX-kyq" secondAttribute="trailing" constant="17" id="N6a-B2-OF8"/>
+                            <constraint firstItem="eWz-Sh-HPK" firstAttribute="trailing" secondItem="AhR-ww-y8f" secondAttribute="trailing" constant="25" id="NyL-ll-uU1"/>
                             <constraint firstItem="eWz-Sh-HPK" firstAttribute="trailing" secondItem="CXi-VK-Dhc" secondAttribute="trailing" id="evM-Pe-b92"/>
                             <constraint firstItem="ugz-FX-kyq" firstAttribute="leading" secondItem="eWz-Sh-HPK" secondAttribute="leading" constant="17" id="hsr-Xn-hQl"/>
+                            <constraint firstItem="eWz-Sh-HPK" firstAttribute="bottom" secondItem="AhR-ww-y8f" secondAttribute="bottom" constant="90" id="rsU-iU-jis"/>
                             <constraint firstItem="CXi-VK-Dhc" firstAttribute="leading" secondItem="bup-7R-YyO" secondAttribute="leading" id="v57-7J-2Ia"/>
                             <constraint firstItem="eWz-Sh-HPK" firstAttribute="bottom" secondItem="zti-JK-hhK" secondAttribute="bottom" constant="25" id="wWg-0t-CeF"/>
                             <constraint firstItem="eWz-Sh-HPK" firstAttribute="trailing" secondItem="CXi-VK-Dhc" secondAttribute="trailing" id="yuJ-GL-o22"/>
@@ -167,6 +183,74 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AwY-0s-jhm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1319" y="141"/>
+        </scene>
+        <!--Example View Controller-->
+        <scene sceneID="NKa-fJ-Cqm">
+            <objects>
+                <viewController storyboardIdentifier="Tinder1" modalPresentationStyle="fullScreen" id="wnL-sT-tIe" customClass="ExampleViewController" customModule="Tinder_Uklon_Edition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t5Z-E6-DZi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3U-uh-5Ig" customClass="VerticalCardSwiper" customModule="VerticalCardSwiper">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mc7-ja-Glv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U3U-uh-5Ig" firstAttribute="top" secondItem="mc7-ja-Glv" secondAttribute="top" id="7TD-0w-P62"/>
+                            <constraint firstItem="U3U-uh-5Ig" firstAttribute="leading" secondItem="mc7-ja-Glv" secondAttribute="leading" id="Ook-2b-KpS"/>
+                            <constraint firstItem="mc7-ja-Glv" firstAttribute="trailing" secondItem="U3U-uh-5Ig" secondAttribute="trailing" id="bO4-02-N43"/>
+                            <constraint firstAttribute="bottom" secondItem="U3U-uh-5Ig" secondAttribute="bottom" id="stK-aw-g7L"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eub-lK-kFq">
+                        <leftBarButtonItems>
+                            <barButtonItem title="-5" id="SVo-tn-uGl">
+                                <connections>
+                                    <action selector="pressRemoveCards:" destination="wnL-sT-tIe" id="XVH-Q2-Gks"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="+5" id="tWk-Mn-rse">
+                                <connections>
+                                    <action selector="pressAddCards:" destination="wnL-sT-tIe" id="Em7-Fa-k7d"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <rightBarButtonItems>
+                            <barButtonItem title="up" image="up-arrow" id="FTg-c7-kn0">
+                                <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="50"/>
+                                <connections>
+                                    <action selector="pressScrollUp:" destination="wnL-sT-tIe" id="zyx-aA-Uzk"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="down" image="down-arrow" id="QGq-Gv-aj0">
+                                <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
+                                <connections>
+                                    <action selector="pressScrollDown:" destination="wnL-sT-tIe" id="96y-zr-CPU"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="right" image="right-arrow" id="c8p-Jd-vnh">
+                                <connections>
+                                    <action selector="pressRightButton:" destination="wnL-sT-tIe" id="1hT-pd-a0d"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="left" image="left-arrow" id="SPd-Lv-mGf">
+                                <connections>
+                                    <action selector="pressLeftButton:" destination="wnL-sT-tIe" id="KRx-b0-3QY"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cardSwiper" destination="U3U-uh-5Ig" id="Zxe-rF-nmh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3jn-Xj-N5o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1864" y="174"/>
         </scene>
         <!--Pop View Controller-->
         <scene sceneID="U5v-Rv-m2d">
@@ -270,10 +354,32 @@
             </objects>
             <point key="canvasLocation" x="-1110.144927536232" y="160.71428571428569"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="224-WM-zHZ">
+            <objects>
+                <navigationController storyboardIdentifier="Tinder" automaticallyAdjustsScrollViewInsets="NO" id="NrD-Nq-R6t" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VSF-Iq-5us">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wnL-sT-tIe" kind="relationship" relationship="rootViewController" id="lgy-bh-t6D"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Gt-y6-p72" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2557" y="170"/>
+        </scene>
     </scenes>
     <resources>
         <image name="back_arrow" width="512" height="512"/>
+        <image name="down-arrow" width="22" height="22"/>
+        <image name="left-arrow" width="22" height="22"/>
+        <image name="right-arrow" width="22" height="22"/>
         <image name="uklon-taxi-in-kyiv" width="1024" height="768"/>
+        <image name="up-arrow" width="22" height="22"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -29,7 +29,10 @@ class PopViewController: UIViewController {
     
     
     @IBAction func tinderAction(_ sender: Any) {
-        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+         if let viewController = storyboard.instantiateViewController(withIdentifier: "Tinder1") as? ExampleViewController {
+            present(viewController, animated: true)
+         }
     }
     
 

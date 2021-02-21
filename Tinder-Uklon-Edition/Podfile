@@ -11,4 +11,5 @@ target 'Tinder-Uklon-Edition' do
   pod 'SwiftyJSON'
   pod 'CocoaLumberjack/Swift'
   pod 'ARCoreLocation', '~> 0.1.10'
+  pod 'VerticalCardSwiper'
 end
