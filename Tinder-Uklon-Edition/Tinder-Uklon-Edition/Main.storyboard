@@ -32,7 +32,7 @@
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="onArButtonPressed:" destination="kVG-Ye-afY" eventType="touchUpInside" id="OVt-5O-2Zp"/>
+                                    <action selector="arAction:" destination="kVG-Ye-afY" eventType="touchUpInside" id="TNn-Ce-ciX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zti-JK-hhK">
@@ -45,6 +45,9 @@
                                 <state key="normal" title="GO">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="onArButtonPressed:" destination="kVG-Ye-afY" eventType="touchUpInside" id="Usf-1x-IOE"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugz-FX-kyq">
                                 <rect key="frame" x="17" y="59" width="380" height="50"/>
@@ -60,9 +63,6 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" image="back_arrow"/>
-                                                <connections>
-                                                    <action selector="onBackButtonPressed:" destination="kVG-Ye-afY" eventType="touchUpInside" id="Tdr-92-d4s"/>
-                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Search for a place or address " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zl3-h9-8Mx">
                                                 <rect key="frame" x="50" y="0.0" width="280" height="50"/>
@@ -250,6 +250,52 @@
             </objects>
             <point key="canvasLocation" x="-1864" y="174"/>
         </scene>
+        <!--View Controller1-->
+        <scene sceneID="Nlb-tb-Far">
+            <objects>
+                <viewController storyboardIdentifier="ViewController1" id="Ydp-BW-lRb" customClass="ViewController1" customModule="Tinder_Uklon_Edition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U5w-zc-869">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKM-Y3-nsb">
+                                <rect key="frame" x="57" y="174" width="300" height="558"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="4LX-Hf-epK">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="496"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="RnJ-Wb-jlc"/>
+                                    <constraint firstItem="4LX-Hf-epK" firstAttribute="leading" secondItem="gKM-Y3-nsb" secondAttribute="leading" id="UnN-td-L7y"/>
+                                    <constraint firstAttribute="trailing" secondItem="4LX-Hf-epK" secondAttribute="trailing" id="ZOk-mS-PkC"/>
+                                    <constraint firstItem="4LX-Hf-epK" firstAttribute="top" secondItem="gKM-Y3-nsb" secondAttribute="top" id="avi-In-Uby"/>
+                                    <constraint firstAttribute="bottom" secondItem="4LX-Hf-epK" secondAttribute="bottom" id="iRj-EW-hee"/>
+                                    <constraint firstAttribute="height" constant="558" id="s5h-RV-9do"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDy-hu-ob0">
+                                <rect key="frame" x="57" y="675" width="300" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="close:" destination="Ydp-BW-lRb" eventType="touchUpInside" id="STX-gM-wc5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gW3-Zs-Qk2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gKM-Y3-nsb" firstAttribute="centerY" secondItem="gW3-Zs-Qk2" secondAttribute="centerY" id="cO5-va-L0d"/>
+                            <constraint firstItem="gKM-Y3-nsb" firstAttribute="centerX" secondItem="gW3-Zs-Qk2" secondAttribute="centerX" id="naC-Rd-neB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eye-Yc-qZI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1878.2608695652175" y="-739.28571428571422"/>
+        </scene>
         <!--Pop View Controller-->
         <scene sceneID="U5v-Rv-m2d">
             <objects>
@@ -374,6 +420,7 @@
     <resources>
         <image name="back_arrow" width="512" height="512"/>
         <image name="down-arrow" width="22" height="22"/>
+        <image name="images" width="225" height="225"/>
         <image name="left-arrow" width="22" height="22"/>
         <image name="right-arrow" width="22" height="22"/>
         <image name="uklon-taxi-in-kyiv" width="1024" height="768"/>

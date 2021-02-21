@@ -103,6 +103,7 @@ class MapViewController: UIViewController {
     }
     
     private func buildRoute1(latitude: String, longitude: String) {
+        mapView.clear()
         let url = "https://maps.googleapis.com/maps/api/directions/json?origin=\(currentLocation.latitude),\(currentLocation.longitude)&destination=\(latitude),\(longitude)&mode=driving&key=\(Constants.googleMapsKey)"
         print("in map destinationLocation= \(destinationLocation)")
         AF.request(url).responseJSON { (reseponse) in
@@ -118,10 +119,6 @@ class MapViewController: UIViewController {
                            let points = overview_polyline?["points"]?.string
                            let path = GMSPath.init(fromEncodedPath: points ?? "")
                            let polyline = GMSPolyline.init(path: path)
-                        for i in stride(from: 0, to: path!.count(), by: 2) {
-                            let cor = path?.coordinate(at: i)
-                            VictoriaData_Landmarks.landmarks.append(VictoriaLandmark(latitude: cor!.latitude, longitude: cor!.longitude, name: "You on right way!", details: "# \(i)"))
-                        }
                            polyline.strokeColor = .systemBlue
                            polyline.strokeWidth = 5
                            polyline.map = self.mapView
@@ -131,6 +128,8 @@ class MapViewController: UIViewController {
                        print(error.localizedDescription)
                    }
                }
+        
+        VictoriaData_Landmarks.landmarks.append(VictoriaLandmark(latitude: currentLocation.latitude, longitude: currentLocation.longitude, name: "You on right way!", details: "#"))
         
         // MARK: Marker for source location
         let sourceMarker = GMSMarker()
@@ -187,12 +186,18 @@ class MapViewController: UIViewController {
     @IBAction func onArButtonPressed(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let viewController = storyboard.instantiateViewController(withIdentifier: "PopViewController") as? PopViewController {
-            viewController.findTaxi = { self.buildRoute1(latitude: "48.505038", longitude: "35.088721") }
+            //48.504934989987625, 35.08870947890034
+            viewController.findTaxi = { self.buildRoute1(latitude: "48.504934989987625", longitude: "35.08870947890034") }
             present(viewController, animated: true)
         }
 
+        
+    }
+    
+    @IBAction func arAction(_ sender: Any) {
         //car 48.505038, 35.088721
-        /*let storyboard = UIStoryboard(name: "ListLandmarksViewController", bundle: nil)
+        VictoriaData_Landmarks.landmarks.append(VictoriaLandmark(latitude: currentLocation.latitude, longitude: currentLocation.longitude, name: "Your car", details: "..."))
+        let storyboard = UIStoryboard(name: "ListLandmarksViewController", bundle: nil)
         if let viewController = storyboard.instantiateViewController(withIdentifier: "ListLandmarksViewController") as? ListLandmarksViewController {
             let interactor = ListLandmarksInteractor()
             let presenter = ListLandmarksPresenter()
@@ -207,9 +212,8 @@ class MapViewController: UIViewController {
                                                      scene: InteractiveScene(),
                                                      locationManager: CLLocationManager())
            present(viewController, animated: true)
-                  }*/
+                  }
     }
-    
 }
 extension MapViewController: CLLocationManagerDelegate {
     
@@ -243,5 +247,25 @@ extension MapViewController : GMSAutocompleteViewControllerDelegate {
     func wasCancelled(_ viewController: GMSAutocompleteViewController) {
         print("Autocomplete was cancelled.")
         self.dismiss(animated: true, completion: nil)
+    }
+}
+
+extension CLLocationCoordinate2D {
+    // MARK: CLLocationCoordinate2D+MidPoint
+    func middleLocationWith(location:CLLocationCoordinate2D) -> CLLocationCoordinate2D {
+
+        let lon1 = longitude * M_PI / 180
+        let lon2 = location.longitude * M_PI / 180
+        let lat1 = latitude * M_PI / 180
+        let lat2 = location.latitude * M_PI / 180
+        let dLon = lon2 - lon1
+        let x = cos(lat2) * cos(dLon)
+        let y = cos(lat2) * sin(dLon)
+
+        let lat3 = atan2( sin(lat1) + sin(lat2), sqrt((cos(lat1) + x) * (cos(lat1) + x) + y * y) )
+        let lon3 = lon1 + atan2(y, cos(lat1) + x)
+
+        let center:CLLocationCoordinate2D = CLLocationCoordinate2DMake(lat3 * 180 / M_PI, lon3 * 180 / M_PI)
+        return center
     }
 }

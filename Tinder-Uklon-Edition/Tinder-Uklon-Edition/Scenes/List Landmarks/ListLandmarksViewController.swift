@@ -54,7 +54,7 @@ class ListLandmarksViewController: UIViewController {
         // ones (`.showNearest`). If landmark views overlap, `.showNearest` will hide the landmarks that are further
         // away.
         landmarker.overlappingLandmarksStrategy = .showAll
-//        landmarker.beginEvaluatingOverlappingLandmarks(atInterval: 1.0) // Set how often to check for overlapping landmarks.
+        landmarker.beginEvaluatingOverlappingLandmarks(atInterval: 1.0) // Set how often to check for overlapping landmarks.
         
         view.addSubview(landmarker.view)
         view.bringSubviewToFront(backBtt)

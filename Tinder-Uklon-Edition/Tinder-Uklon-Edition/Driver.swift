@@ -29,13 +29,15 @@ internal class Driver {
     let carModel: String
     let imageLabel: String
     let discription: String
+    let price: String
 
-    init(name: String, rating: String, carModel: String, imageLabel: String, discription: String) {
+    init(name: String, rating: String, carModel: String, imageLabel: String, discription: String, price: String) {
         self.name = name
         self.rating = rating
         self.carModel = carModel
         self.imageLabel = imageLabel
         self.discription = discription
+        self.price = price
     }
     
     init() {
@@ -44,5 +46,6 @@ internal class Driver {
         self.carModel = "Reno Logan"
         self.imageLabel = "Driver4"
         self.discription = "..."
+        self.price = ""
     }
 }

@@ -28,15 +28,15 @@ class ExampleViewController: UIViewController, VerticalCardSwiperDelegate, Verti
     @IBOutlet private var cardSwiper: VerticalCardSwiper!
 
     private var driversDemoData: [Driver] = [
-        Driver(name: "Nikolay", rating: "⭐️⭐️⭐️⭐️⭐️", carModel: "Zaporozhets 2021", imageLabel: "Driver1", discription: "My cell: +380953456785;\n email: nikolay.driver@uklon.com"),
-        Driver(name: "Sophia", rating: "⭐️⭐️⭐️⭐️⭐️", carModel: "Hyundai Elantra", imageLabel: "Driver2", discription: "My cell: +380956758691;\n email: sophia.shumel@uklon.com" ),
-        Driver(name: "Oleh", rating: "⭐️⭐️⭐️", carModel: "Toyota Camry", imageLabel: "Driver6", discription: "My cell: +38095789895;\n email: taxi.driver2@uklon.com"),
-        Driver(name: "Anastasia", rating: "⭐️⭐️⭐️⭐️⭐️", carModel: "Tesla Model 3", imageLabel: "Driver3", discription: "My cell: +380954568777;\n email: ana.lagno@uklon.com"),
-        Driver(name: "Vanessa", rating: "⭐️⭐️⭐️⭐️", carModel: "Woltwagen Tuareg", imageLabel: "Driver9", discription: "My cell: +360788789895;\n email: van.drive@uklon.com"),
-        Driver(name: "John", rating: "⭐️⭐️⭐️⭐️⭐️", carModel: "Audi Q8", imageLabel: "Driver4", discription: "Winter is coming"),
-        Driver(name: "Samuel", rating: "⭐️⭐️⭐️", carModel: "Honda", imageLabel: "Driver7", discription: "My cell: +306788789895;\n email: sam.driver@uklon.com"),
-        Driver(name: "Daniel", rating: "⭐️⭐️⭐️⭐️⭐️", carModel: "Peugeot 406", imageLabel: "Driver5", discription: "My cell: +336788789895;\n email: taxi.driver@uklon.com"),
-        Driver(name: "Sam", rating: "⭐️⭐️⭐️⭐️", carModel: "BMW 1999", imageLabel: "Driver8", discription: "My cell: +336548789895;\n email: taxi.driver1@uklon.com")
+        Driver(name: "Sam", rating: "⭐️⭐️⭐️⭐️", carModel: "BMW 1999", imageLabel: "Driver8", discription: "My cell: +336548789895;\n email: taxi.driver1@uklon.com", price: "70₴"),
+        Driver(name: "Oleh", rating: "⭐️⭐️⭐️", carModel: "Toyota Camry", imageLabel: "Driver6", discription: "My cell: +38095789895;\n email: taxi.driver2@uklon.com", price: "80₴"),
+        Driver(name: "Vanessa", rating: "⭐️⭐️⭐️⭐️", carModel: "Woltwagen Polo", imageLabel: "Driver9", discription: "My cell: +360788789895;\n email: van.drive@uklon.com", price: "69$"),
+        Driver(name: "Anastasia", rating: "⭐️⭐️⭐️⭐️⭐️", carModel: "Tesla Model 3", imageLabel: "Driver3", discription: "My cell: +380954568777;\n email: ana.lagno@uklon.com", price: "150₴"),
+        Driver(name: "Nikolay", rating: "⭐️⭐️⭐️⭐️⭐️", carModel: "Reno Logan", imageLabel: "Driver1", discription: "My cell: +380953456785;\n email: nikolay.driver@uklon.com", price: "90₴"),
+        Driver(name: "Samuel", rating: "⭐️⭐️⭐️", carModel: "Honda Acord", imageLabel: "Driver7", discription: "My cell: +306788789895;\n email: sam.driver@uklon.com", price: "65₴"),
+
+        Driver(name: "Sophia", rating: "⭐️⭐️⭐️⭐️⭐️", carModel: "Hyundai Elantra", imageLabel: "Driver2", discription: "My cell: +380956758691;\n email: sophia.shumel@uklon.com", price: "80₴" )
+     
     ]
 
     override func viewDidLoad() {
@@ -109,6 +109,7 @@ class ExampleViewController: UIViewController, VerticalCardSwiperDelegate, Verti
             cardCell.carModel.text = "Car model: " + contact.carModel
             cardCell.discription.text = contact.discription
             cardCell.driverImage.image = UIImage(named: contact.imageLabel)
+            cardCell.approveBtn.titleLabel?.text = contact.price
             return cardCell
         }
         return CardCell()

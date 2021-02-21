@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521275A825E2253E00877D79 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521275A725E2253E00877D79 /* ViewController1.swift */; };
 		5250467825E1D2E0007B42B2 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5250467625E1D2E0007B42B2 /* Timer.swift */; };
 		5250467925E1D2E0007B42B2 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5250467725E1D2E0007B42B2 /* ProgressBar.swift */; };
 		5250469A25E1D6AE007B42B2 /* ExampleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5250469625E1D6AD007B42B2 /* ExampleCell.xib */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		47D27F6D3CCA481BAD96813B /* Pods-Tinder-Uklon-Edition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tinder-Uklon-Edition.release.xcconfig"; path = "Target Support Files/Pods-Tinder-Uklon-Edition/Pods-Tinder-Uklon-Edition.release.xcconfig"; sourceTree = "<group>"; };
 		49F495B869ECFE89B998A69A /* libPods-Tinder-Uklon-Edition.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tinder-Uklon-Edition.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		521275A725E2253E00877D79 /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		5250467625E1D2E0007B42B2 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		5250467725E1D2E0007B42B2 /* ProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		5250469625E1D6AD007B42B2 /* ExampleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleCell.xib; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				5261145025E13C5D005FB9E8 /* Info.plist */,
 				BC45CC0525E142CD000D2920 /* RideRequestExtension.intentdefinition */,
 				52B72B9D25E1B505006B6D85 /* PopViewController.swift */,
+				521275A725E2253E00877D79 /* ViewController1.swift */,
 			);
 			path = "Tinder-Uklon-Edition";
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521275A825E2253E00877D79 /* ViewController1.swift in Sources */,
 				52B72B6625E18D3C006B6D85 /* ListLandmarksPresenter.swift in Sources */,
 				52B72B6425E18D3C006B6D85 /* ListLandmarksViewController.swift in Sources */,
 				52B72B9E25E1B505006B6D85 /* PopViewController.swift in Sources */,
