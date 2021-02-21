@@ -25,26 +25,23 @@ import Foundation
 internal class Driver {
 
     let name: String
-    let rating: Int
+    let rating: String
     let carModel: String
-    let carImageLabel: String
     let imageLabel: String
     let discription: String
 
-    init(name: String, rating: Int, carModel: String, carImageName: String, imageLabel: String, discription: String) {
+    init(name: String, rating: String, carModel: String, imageLabel: String, discription: String) {
         self.name = name
         self.rating = rating
         self.carModel = carModel
-        self.carImageLabel = carImageName
         self.imageLabel = imageLabel
         self.discription = discription
     }
     
     init() {
         self.name = "Default User"
-        self.rating = 5
+        self.rating = "⭐️⭐️⭐️"
         self.carModel = "Reno Logan"
-        self.carImageLabel = "Car5"
         self.imageLabel = "Driver4"
         self.discription = "..."
     }
