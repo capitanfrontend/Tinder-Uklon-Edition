@@ -22,6 +22,7 @@ class MapViewController: UIViewController {
     @IBOutlet weak var searchView: UIView!
     @IBOutlet weak var searchLabel: UILabel!
     @IBOutlet weak var arButton: UIButton!
+    @IBOutlet weak var goButton: UIButton!
     
     var locationManager = CLLocationManager()
     var currentLocation = CLLocationCoordinate2D()
@@ -34,6 +35,9 @@ class MapViewController: UIViewController {
         arButton.layer.cornerRadius = 25
         arButton.layer.borderWidth = 1
         arButton.layer.borderColor = UIColor.black.cgColor
+        goButton.layer.cornerRadius = 25
+        goButton.layer.borderWidth = 1
+        goButton.layer.borderColor = UIColor.black.cgColor
     }
     
     override func viewDidLoad() {

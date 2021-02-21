@@ -28,11 +28,11 @@ class ExampleViewController: UIViewController, VerticalCardSwiperDelegate, Verti
     @IBOutlet private var cardSwiper: VerticalCardSwiper!
 
     private var driversDemoData: [Driver] = [
-        Driver(name: "Nikolay", rating: 10, carModel: "Zaporozhets 2021", carImageName: "Car1", imageLabel: "Driver1", discription: "Довезу на шулявку за 40 грн"),
-        Driver(name: "Sophia", rating: 10, carModel: "Hyundai Elantra", carImageName: "Car2", imageLabel: "Driver2", discription: "Таксую больше 5 лет, быстро и комфортно Соня" ),
-        Driver(name: "Anastasia", rating: 10, carModel: "Tesla Model 3", carImageName: "Car3", imageLabel: "Driver3", discription: "Таксую шо батя"),
-        Driver(name: "John", rating: 10, carModel: "Audi Q8", carImageName: "Car4", imageLabel: "Driver4", discription: "Зима близко"),
-        Driver(name: "Daniel", rating: 100, carModel: "Peugeot 406", carImageName: "Car5", imageLabel: "Driver5", discription: "Таксую шо батя")
+        Driver(name: "Nikolay", rating: 10, carModel: "Zaporozhets 2021", carImageName: "Car1", imageLabel: "Driver1", discription: "My cell: +380953456785;\n email: nikolay.driver@uklon.com"),
+        Driver(name: "Sophia", rating: 10, carModel: "Hyundai Elantra", carImageName: "Car2", imageLabel: "Driver2", discription: "My cell: +380956758691;\n email: sophia.shumel@uklon.com" ),
+        Driver(name: "Anastasia", rating: 10, carModel: "Tesla Model 3", carImageName: "Car3", imageLabel: "Driver3", discription: "My cell: +380954568777;\n email: ana.lagno@uklon.com"),
+        Driver(name: "John", rating: 10, carModel: "Audi Q8", carImageName: "Car4", imageLabel: "Driver4", discription: "Winter is coming"),
+        Driver(name: "Daniel", rating: 100, carModel: "Peugeot 406", carImageName: "Car5", imageLabel: "Driver5", discription: "My cell: +336788789895;\n email: taxi.driver@uklon.com")
     ]
 
     override func viewDidLoad() {

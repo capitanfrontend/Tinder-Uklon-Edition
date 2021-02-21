@@ -45,9 +45,6 @@
                                 <state key="normal" title="GO">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
-                                <connections>
-                                    <action selector="onArButtonPressed:" destination="kVG-Ye-afY" eventType="touchUpInside" id="xj4-5X-eMf"/>
-                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugz-FX-kyq">
                                 <rect key="frame" x="17" y="59" width="380" height="50"/>
@@ -114,8 +111,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="arButton" destination="zti-JK-hhK" id="giu-CH-Xe0"/>
+                        <outlet property="arButton" destination="AhR-ww-y8f" id="ThC-Si-3e6"/>
                         <outlet property="backButton" destination="B8E-4j-SYb" id="PbI-IR-mrZ"/>
+                        <outlet property="goButton" destination="zti-JK-hhK" id="7dP-uA-ixV"/>
                         <outlet property="mapView" destination="CXi-VK-Dhc" id="u5n-0A-LMG"/>
                         <outlet property="searchLabel" destination="zl3-h9-8Mx" id="OhP-pT-6SQ"/>
                         <outlet property="searchView" destination="ugz-FX-kyq" id="bAA-LE-KsN"/>
